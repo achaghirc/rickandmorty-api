@@ -26,11 +26,11 @@ public class Response {
         this.episodes = episodes;
     }
 
-    public LocalDate getDate() {
+    public LocalDate getFirstAppearance() {
         return firstAppearance;
     }
 
-    public void setDate(LocalDate date) {
+    public void setFirstAppearance(LocalDate date) {
         this.firstAppearance = date;
     }
 
