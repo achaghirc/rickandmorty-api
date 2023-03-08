@@ -1,0 +1,8 @@
+# CONFIGURATION SETTINGS FOR THE PROJECT
+---
+spring:
+  rick-morty:
+    api:
+      url: https://rickandmortyapi.com/api
+      timeout: 10
+      writeTimeout: 10
