@@ -25,7 +25,7 @@ public class EpisodeTest {
 
         episode.setId(id);
         episode.setName(name);
-        episode.setAirDate(airDate);
+        episode.setAir_date(airDate);
         episode.setCharacters(characters);
         episode.setUrl(url);
         episode.setCreated(now);
@@ -33,7 +33,7 @@ public class EpisodeTest {
 
         MatcherAssert.assertThat(episode.getId(), Matchers.is(id));
         MatcherAssert.assertThat(episode.getName(), Matchers.is(name));
-        MatcherAssert.assertThat(episode.getAirDate(), Matchers.is(airDate));
+        MatcherAssert.assertThat(episode.getAir_date(), Matchers.is(airDate));
         MatcherAssert.assertThat(episode.getCharacters(), Matchers.is(characters));
         MatcherAssert.assertThat(episode.getUrl(), Matchers.is(url));
         MatcherAssert.assertThat(episode.getCreated(), Matchers.is(now));
