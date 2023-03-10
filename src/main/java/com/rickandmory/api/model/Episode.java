@@ -9,7 +9,7 @@ public class Episode {
 
     private Long id;
     private String name;
-    private String airDate;
+    private String air_date;
     private String episode;
     private List<String> characters;
     private String url;
@@ -32,12 +32,12 @@ public class Episode {
         this.name = name;
     }
 
-    public String getAirDate() {
-        return airDate;
+    public String getAir_date() {
+        return air_date;
     }
 
-    public void setAirDate(String airDate) {
-        this.airDate = airDate;
+    public void setAir_date(String air_date) {
+        this.air_date = air_date;
     }
 
     public String getEpisode() {

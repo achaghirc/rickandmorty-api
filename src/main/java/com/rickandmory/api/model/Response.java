@@ -1,13 +1,12 @@
 package com.rickandmory.api.model;
 
-import java.time.LocalDate;
 import java.util.List;
 
 public class Response {
 
     private String name;
     private List<String> episodes;
-    private LocalDate firstAppearance;
+    private String firstAppearance;
 
 
     public String getName() {
@@ -26,11 +25,11 @@ public class Response {
         this.episodes = episodes;
     }
 
-    public LocalDate getFirstAppearance() {
+    public String getFirstAppearance() {
         return firstAppearance;
     }
 
-    public void setFirstAppearance(LocalDate date) {
+    public void setFirstAppearance(String date) {
         this.firstAppearance = date;
     }
 
@@ -38,8 +37,8 @@ public class Response {
     public String toString() {
         return "{" +
                 "name='" + name + "'," +
-                "episodes=" + episodes +"," +
-                "date=" + firstAppearance + ","+
+                "episodes=" + episodes + "," +
+                "date=" + firstAppearance + "," +
                 '}';
     }
 }

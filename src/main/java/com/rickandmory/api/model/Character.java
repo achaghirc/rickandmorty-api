@@ -1,13 +1,11 @@
 package com.rickandmory.api.model;
 
-import org.springframework.format.annotation.DateTimeFormat;
-
-import java.time.LocalDate;
+import java.io.Serializable;
 import java.util.List;
 
-public class Character {
+public class Character implements Serializable {
 
-    private Long id;
+    private Integer id;
     private String name;
     private String status;
     private String species;
@@ -16,17 +14,16 @@ public class Character {
     private BaseInfo origin;
     private BaseInfo location;
     private String image;
-    private String episode;
-    private List<String> url;
-    @DateTimeFormat(pattern = "yyyy-mm-ddTHH:mm:ss.sssZ")
-    private LocalDate created;
+    private List<String> episode;
+    private String url;
+    private String created;
 
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -94,27 +91,27 @@ public class Character {
         this.image = image;
     }
 
-    public String getEpisode() {
+    public List<String> getEpisode() {
         return episode;
     }
 
-    public void setEpisode(String episode) {
+    public void setEpisode(List<String> episode) {
         this.episode = episode;
     }
 
-    public List<String> getUrl() {
+    public String getUrl() {
         return url;
     }
 
-    public void setUrl(List<String> url) {
+    public void setUrl(String url) {
         this.url = url;
     }
 
-    public LocalDate getCreated() {
+    public String getCreated() {
         return created;
     }
 
-    public void setCreated(LocalDate created) {
+    public void setCreated(String created) {
         this.created = created;
     }
 }

@@ -4,7 +4,6 @@ import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 
-import java.time.LocalDate;
 import java.util.List;
 
 
@@ -17,9 +16,8 @@ public class CharacterTest {
     public void testCharacter() {
 
         Character character = new Character();
-        LocalDate now = LocalDate.now();
 
-        Long id = 1L;
+        Integer id = 1;
         String name = "Rick";
         String status = "Alive";
         String species = "Human";
@@ -28,8 +26,9 @@ public class CharacterTest {
         BaseInfo origin = new BaseInfo();
         BaseInfo location = new BaseInfo();
         String image = "https://rickandmortyapi.com/api/character/avatar/1.jpeg";
-        String episode = "Rick";
-        List<String> url = List.of( "https://rickandmortyapi.com/api/episode/1");
+        String url = "Rick";
+        List<String> episode = List.of("https://rickandmortyapi.com/api/episode/1");
+        String now = "2017-11-04T18:48:46.250Z";
 
         character.setId(id);
         character.setName(name);
